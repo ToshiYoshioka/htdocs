@@ -301,3 +301,46 @@ body{
   padding: 12px 0;
   font-size: 1.3rem;
 }
+
+/*media-query*/
+@media(max-width:768px){
+  body{
+    font-size: 1.3rem;
+  }
+  
+  .site-title-sub::before,
+  .site-title-sub::after{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .site-title-sub{
+    font-size: 1.7rem;
+  }
+  
+  .site-title{
+    font-size: 5rem;
+    margin-top: 35px;
+  }
+  
+  .header{
+    padding-top: 60px;
+  }
+  
+  /*iOS8.4.1対策*/
+  .button:hover{
+    opacity: 1;
+  }
+  
+  .heading{
+    font-size: 2.5rem;
+  }
+  
+  .about-txt{
+    line-height: 1.8;
+  }
+  
+  
+  
+}
