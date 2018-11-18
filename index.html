@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header" :style="{ height: size + 'px' }">
     <p class="site-title-sub">Web designer's portfolio</p>
     <h1 class="site-title">HI, MY NAME IS…</h1>
     <p class="site-description">Check out some of my works</p>
@@ -123,5 +123,14 @@
     &#169; Sample Site
   </footer>
   <script src="lib/placeholders.min.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#header',
+      data: {
+        size : window.innerHeight 
+      }
+    })
+  </script>
 </body>
 </html>
